@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local('Gotham Pro'), local('Gotham-Pro'),
+  url('../../fonts/gotham-pro/GothamPro.woff') format('woff'),
+  url('../../fonts/gotham-pro/GothamPro.ttf') format('truetype'),
+  url('../../fonts/gotham-pro/GothamPro.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+$font-size-small-xs: 12px;
+$font-size-small: 14px;
+$font-size-base: 16px;
+$font-size-medium: 18px;
+$font-size-medium-xl: 26px;
+$font-size-large-xs: 32px;
+$font-size-large: 38px;
+$font-size-large-xl: 50px;
+
+.fs {
+  &-12 {
+    font-size: $font-size-small-xs;
+    line-height: 15.6px;
+  }
+  &-14 {
+    font-size: $font-size-small;
+    line-height: 18.2px;
+  }
+  &-16 {
+    font-size: $font-size-base;
+    line-height: 20.8px;
+  }
+  &-18 {
+    font-size: $font-size-medium;
+  }
+  &-26 {
+    font-size: $font-size-medium-xl;
+    line-height: 31.2px;
+  }
+  &-32 {
+    font-size: $font-size-large-xs;
+    line-height: 38.4px;
+  }
+  &-38 {
+    font-size: $font-size-large;
+    line-height: 49.4px;
+  }
+  &-50 {
+    font-size: $font-size-large-xl;
+    line-height: 65px;
+  }
+}

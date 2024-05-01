@@ -1,0 +1,170 @@
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.py-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.py-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.pr-12 {
+  padding-right: 12px;
+}
+.pr-27 {
+  padding-right: 27px;
+}
+.pr-0 {
+  padding-right: 0!important;
+}
+.pl-0 {
+  padding-left: 0!important;
+}
+.pt-63 {
+  padding-top: 63px;
+}
+.pb-70 {
+  padding-bottom: 70px;
+}
+.p-0 {
+  padding: 0!important;
+}
+.px-16 {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.mr-32 {
+  margin-right: 32px;
+}
+.mr-38 {
+  margin-right: 38px;
+}
+.mr-57 {
+  margin-right: 57px;
+}
+.mr-22 {
+  margin-right: 22px;
+}
+.mr-12 {
+  margin-right: 12px;
+}
+
+.my-14 {
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+.my-26 {
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+.m-0 {
+  margin: 0!important;
+}
+
+.ml-32 {
+  margin-left: 32px;
+}
+.mb-43 {
+  margin-bottom: 43px;
+}
+.mb-54 {
+  margin-bottom: 54px;
+}
+
+.mt-28 {
+  margin-top: 28px;
+}
+
+
+
+.border-grey {
+  border: 1px solid $grey-light;
+}
+
+.bg {
+  &-orange {
+    background-color: $brand-main-orange;
+  }
+  &-silver {
+    background-color: $silver;
+  }
+  &-green {
+    background-color: $brand-main-green;
+  }
+  &-light-beige {
+    background-color: $light-beige;
+  }
+  &-brand-alt {
+    background-color: $brand-alt;
+  }
+}
+
+.c {
+  &-white {
+    color: $white;
+  }
+  &-black {
+    color: $black;
+  }
+  &-dark {
+    color: $dark;
+  }
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.top-40 {
+  top: 40px;
+}
+.top-24 {
+  top: 24px;
+}
+.top-20 {
+  top: 20px;
+}
+.right-38 {
+  right: 38px;
+}
+.right-24 {
+  right: 24px;
+}
+.left-38 {
+  left: 38px;
+}
+.left-24 {
+  left: 24px;
+}
+.top--60 {
+  top: -60px;
+}
+
+
+.max-w-400 {
+  max-width: 400px;
+}
+.max-w-862 {
+  max-width: 862px;
+}
+
+.border-r-20 {
+  border-radius: 20px;
+}
+.border-r-17 {
+  border-radius: 17px;
+}
+.bor-right {
+  border-right: 1px solid $dark-grey;
+}
+.w-33 {
+  width: 33%;
+}
+
