@@ -35,18 +35,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
     document.querySelectorAll('.select-dropdown').forEach(function (dropdownWrapper) {
+        console.log('dropdownWrapper', dropdownWrapper);
         const dropdownBtn = dropdownWrapper.querySelector('.select-dropdown-btn');
+        console.log('dropdownBtn', dropdownBtn);
         const dropdownList = dropdownWrapper.querySelector('.select-dropdown-list');
         const dropdownItems = dropdownList.querySelectorAll('.select-dropdown-list-item');
         const dropdownInput = dropdownWrapper.querySelector('.select-dropdown-input')
 
         dropdownBtn.addEventListener('click', function () {
+            console.log('this', this)
             dropdownList.classList.toggle('select-dropdown-list-visible');
             this.classList.toggle('active');
         });
 
         dropdownItems.forEach(function(listItem) {
             listItem.addEventListener('click', function (e) {
+                console.log('this', this)
                 dropdownItems.forEach(function(el) {
                     el.classList.remove('select-dropdown-list-item-active');
                 })
@@ -113,7 +117,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 pagination: false,
                 breakpoints: {
                     991: {
-                        perPage: 1.2,
+                        perPage: 1.1,
                     },
                 }
             } ).mount();
@@ -126,7 +130,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 pagination: false,
                 breakpoints: {
                     991: {
-                        perPage: 1.2,
+                        perPage: 1.1,
                     },
                 }
             } ).mount();

@@ -42,6 +42,9 @@
 .mr-38 {
   margin-right: 38px;
 }
+.mr-70 {
+  margin-right: 70px;
+}
 .mr-57 {
   margin-right: 57px;
 }
@@ -51,10 +54,17 @@
 .mr-12 {
   margin-right: 12px;
 }
+.mr-9 {
+  margin-right: 9px;
+}
 
 .my-14 {
   margin-top: 14px;
   margin-bottom: 14px;
+}
+.my-27 {
+  margin-top: 27px;
+  margin-bottom: 27px;
 }
 .my-26 {
   margin-top: 26px;
@@ -99,6 +109,12 @@
   }
   &-brand-alt {
     background-color: $brand-alt;
+  }
+  &-yellow {
+    background-color: $brand-main-yellow;
+  }
+  &-light-blue {
+    background-color: $light-blue;
   }
 }
 
@@ -153,6 +169,11 @@
 }
 .max-w-862 {
   max-width: 862px;
+}
+.w-160 {
+  @media (min-width: 767px) {
+    width: 160px;
+  }
 }
 
 .border-r-20 {

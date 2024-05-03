@@ -10,16 +10,22 @@
 }
 
 
+$font-size-small-xss: 10px;
 $font-size-small-xs: 12px;
 $font-size-small: 14px;
 $font-size-base: 16px;
 $font-size-medium: 18px;
+$font-size-medium-xs: 24px;
 $font-size-medium-xl: 26px;
 $font-size-large-xs: 32px;
 $font-size-large: 38px;
 $font-size-large-xl: 50px;
 
 .fs {
+  &-10 {
+    font-size: $font-size-small-xss;
+    line-height: 13px;
+  }
   &-12 {
     font-size: $font-size-small-xs;
     line-height: 15.6px;
@@ -34,9 +40,14 @@ $font-size-large-xl: 50px;
   }
   &-18 {
     font-size: $font-size-medium;
+    line-height: 21.6px;
   }
   &-26 {
     font-size: $font-size-medium-xl;
+    line-height: 31.2px;
+  }
+  &-24 {
+    font-size: $font-size-medium-xs;
     line-height: 31.2px;
   }
   &-32 {

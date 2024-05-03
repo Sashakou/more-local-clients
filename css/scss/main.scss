@@ -5,8 +5,20 @@
 
 body {
   font-family: 'Gotham Pro';
+  overflow-x: hidden;
 }
-
+.container-fluid {
+  @media (min-width: 990px) {
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+}
+.logo {
+  @media (min-width: 990px) {
+    width: 105px;
+    height: 53px;
+  }
+}
 /* Panel */
 .panel {
   border-bottom: 1px solid $grey;
@@ -63,8 +75,8 @@ body {
   padding-right: 50px;
   display: inline-block;
   color: $black;
-  margin-top: 60px;
-  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 40px;
   @media (max-width: 767px) {
     font-size: 28px;
     line-height: 36.4px;
@@ -91,15 +103,25 @@ body {
 
 /* link decoration */
 .l-dec {
-  padding: 258px 0;
+  border-radius: 20px;
+  padding: 232px 0;
   @media (max-width: 1200px) {
     padding: 100px 0;
   }
-  @media (max-width: 768px) {
-    padding: 40px 0;
-  }
   @media (max-width: 991px) {
     margin-bottom: 16px;
+    :first-child {
+      font-size: $font-size-medium-xs;
+      line-height: 31.2px;
+    }
+    :last-child {
+      font-size: $font-size-small;
+      line-height: 18.2px;
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 43px 0;
+    border-radius: 10px;
   }
   &:hover {
     .instruction-hover {
@@ -116,6 +138,10 @@ body {
     margin-bottom: 12px;
     .accordion-header {
       .accordion-button {
+        @media (max-width: 768px) {
+          font-size: $font-size-small;
+          line-height: 18.2px;
+        }
         &:not(.collapsed) {
           border-radius: 20px 20px 0 0;
           box-shadow: none;
@@ -145,6 +171,10 @@ body {
       box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
       .accordion-body {
         padding: 24px 24px 24px 28px;
+        @media (max-width: 768px) {
+          font-size: $font-size-small-xs;
+          line-height: 15.6px;
+        }
       }
     }
   }
@@ -158,6 +188,21 @@ body {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
   @media (max-width: 991px) {
     padding: 16px;
+  }
+  @media (max-width: 768px) {
+    :first-child {
+      font-size: $font-size-medium;
+      line-height: 21.6px;
+    }
+    :nth-child(2) {
+      font-size: $font-size-small;
+      line-height: 18.2px;
+    }
+    :last-child {
+      font-size: $font-size-small;
+      line-height: 18.2px;
+      line-height: 18.2px;
+    }
   }
 }
 .cover-star {
@@ -175,16 +220,26 @@ body {
 /* sel */
 .select-dropdown {
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12);
+  @media (max-width: 768px) {
+    font-size: $font-size-small-xs;
+    line-height: 15.6px;
+  }
   &-btn {
     width: 100%;
     background: $white;
     border: 1px solid $dark-grey;
     border-radius: 5px;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 20px;
     padding-right: 83px;
     cursor: pointer;
+    @media (max-width: 768px) {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 7px;
+      padding-right: 50px;
+    }
     &:before {
       content: "";
       position: absolute;
@@ -193,6 +248,9 @@ body {
       background-color: $dark-grey;
       top: 0;
       right: 63px;
+      @media (max-width: 768px) {
+        right: 43px;
+      }
     }
     &:after {
       content: "";
@@ -205,6 +263,9 @@ body {
       background: url("../../img/Group 788.svg") 50% 50% no-repeat;
       pointer-events: none;
       transition: 200ms ease;
+      @media (max-width: 768px) {
+        width: 44px;
+      }
     }
     &:disabled:after {
       display: none;
@@ -251,6 +312,12 @@ body {
       padding-right: 83px;
       cursor: pointer;
       transition: 200ms ease;
+      @media (max-width: 768px) {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 7px;
+        padding-right: 50px;
+      }
       &:hover {
         background: $white-light;
       }
@@ -269,6 +336,14 @@ body {
 .cover-form-group {
   @media (max-width: 767px) {
     padding: 38px 28px;
+  }
+  > div {
+    font-size: $font-size-medium-xs;
+    line-height: 31.2px;
+  }
+  > p {
+    font-size: $font-size-small-xs;
+    line-height: 15.6px;
   }
   form {
     max-width: 862px;
@@ -296,7 +371,7 @@ body {
 }
 
 .gift {
-  padding: 207px 8px 173px 8px;
+  padding: 186px 8px 144px 8px;
   text-align: center;
   height: 100%;
   border-radius: 20px;
@@ -312,7 +387,11 @@ body {
     }
   }
   @media (max-width: 768px) {
-    padding: 32px 22px;
+    padding: 35px 22px;
+    div {
+      font-size: $font-size-medium;
+      line-height: 21.6px;
+    }
   }
 }
 #gift-slider {
@@ -328,18 +407,98 @@ body {
     }
   }
 }
+#product-slider {
+  @media (max-width: 768px) {
+    z-index: 999999;
+    div:not(.btn) {
+      z-index: 999999;
+    }
+  }
+}
 #product-slider, #product-slider1 {
   .splide__list {
     display: flex;
     .splide__slide {
-      width: 32.2%;
-      margin-right: 28px;
+      width: 32.4%;
+      margin-right: 23px;
+      .card {
+        border-radius: 20px;
+        min-height: 715px;
+        @media (max-width: 768px) {
+          min-height: 500px;
+        }
+        .card-body {
+          padding: 17px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          @media (max-width: 768px) {
+            padding: 16px;
+          }
+          .title-img {
+            padding: 8px 16px;
+            left: 24px;
+            top: 20px;
+            @media (max-width: 768px) {
+              font-size: $font-size-small-xss;
+              line-height: 13px;
+              left: 12px;
+              top: 12px;
+              padding: 4px 15px;
+            }
+          }
+          h5 {
+            @media (max-width: 768px) {
+              font-size: $font-size-medium;
+              line-height: 21.6px;
+            }
+          }
+          p {
+            @media (max-width: 768px) {
+              font-size: $font-size-small;
+              line-height: 18.2px;
+            }
+          }
+          .prod-info {
+            @media (max-width: 768px) {
+              font-size: $font-size-small-xs;
+              line-height: 15.6px;
+            }
+            .star {
+              width: 22px;
+              height: 22px;
+              background: url("../../img/Star 1.svg") center no-repeat;
+              background-size: contain;
+              @media (max-width: 768px) {
+                width: 14px;
+                height: 14px;
+              }
+            }
+          }
+        }
+      }
     }
     :last-child {
       margin-right: 0;
     }
   }
 }
+#gift-slider, #product-slider, #product-slider1 {
+  @media (max-width: 768px) {
+    .splide__track {
+      overflow: visible;
+      z-index: auto;
+    }
+  }
+}
+#comments-slider {
+  .splide__track {
+    overflow: visible;
+    z-index: auto;
+  }
+}
+
+
 .banner {
   padding: 207px 8px 173px 8px;
   text-align: center;
@@ -360,11 +519,19 @@ body {
     padding: 32px 22px;
   }
 }
-.btn-group-flex {
-  @media (max-width: 991px) {
-    flex-direction: column;
-    :nth-child(1) {
-      margin-bottom: 16px;
-    }
+.like {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  right: 24px;
+  top: 260px;
+  border-radius: 50%;
+  padding: 10.5px;
+  background: $white url("../../img/Group 1869.svg") center no-repeat;
+  @media (max-width: 768px) {
+    width: 36px;
+    height: 36px;
+    right: 12px;
+    top: 138px;
   }
 }
